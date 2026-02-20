@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'SF-Pro';
+    src: url('/assets/font/SF-Pro.ttf') format('truetype');
+    font-weight: 300-900;
+    font-style: normal;
+}
+
+@theme {
+    --breakpoint-1873: 1873px;
+    --breakpoint-1731: 1731px;
+    --breakpoint-1440: 1440px;
+    --breakpoint-1204: 1204px;
+    --color-primary: #DFBB60;
+    --font-SF: "SF-Pro", sans-serif;
+    --font-Inter: "Inter", sans-serif;
+    --font-rethink: "Rethink Sans", sans-serif;
+}
+
+#app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif !important;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background: #000000;
+}
+
+label {
+    cursor: pointer;
+}
+
+.transition-cubic {
+    transition: all 0.4s cubic-bezier(0.65, -0.25, 0.35, 1.25);
+}
+
+.transition-cubic-hover {
+    transition: all 0.4s cubic-bezier(0.65, -0.25, 0.35, 1.25);
+}
+.transition-cubic-hover:hover {
+    @apply scale-102;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.4s ease-out;
+}
+
+.top-shadow {
+    box-shadow:
+        inset -2.17px -2.17px 2.17px 0 rgba(0, 0, 0, 0.2),
+        inset 2.17px 2.17px 2.17px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 10.86px 0 rgba(47, 182, 122, 0.2),
+        inset 0 0 32.58px 0 rgba(96, 219, 164, 0.75),
+        0 0 10.86px 0 rgba(47, 182, 122, 0.25);
+    backdrop-filter: blur(33.17px);
+}
