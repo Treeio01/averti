@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <>
             <Head title="Averti" />
-            <div className="flex w-full flex-col items-center min-h-screen">
+            <div className="flex w-full flex-col items-center min-h-screen overflow-hidden">
                 <img src="/assets/img/bg.png" className="w-full absolute top-0 left-1/2 -translate-x-1/2 h-screen" alt="" />
                 <TopText text={props.settings?.text ?? '$Averti token launch coming soon. Contract address will appear here.'} />
                 <Header twitter={props.settings?.twitter} />

@@ -12,7 +12,7 @@ const navLinks = [
 ];
 
 const Header = ({ twitter, isLight = true }) => (
-    <header className="flex justify-between relative w-full max-w-[1321px] mt-[20px] items-center">
+    <header className="flex justify-between relative w-full max-w-[1321px] mt-[20px] items-center px-4 md:px-0">
         {isLight && <img src="/assets/img/glow-header.svg" className="absolute top-full left-1/2 -translate-x-1/2" alt="" />}
 
         <div className="flex items-center gap-[10px]" data-scroll-animate="slide-in-left" data-scroll-duration="0.7">
@@ -20,7 +20,7 @@ const Header = ({ twitter, isLight = true }) => (
             <span className="text-white font-semibold text-lg">Averti</span>
         </div>
 
-        <nav className="flex items-center gap-[24px]">
+        <nav className="hidden lg:flex items-center gap-[24px]">
             {navLinks.map((item, i) => (
                 <a
                     key={item.href}

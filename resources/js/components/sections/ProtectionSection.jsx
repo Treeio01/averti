@@ -8,12 +8,12 @@ const CARDS = [
     },
     {
         text: 'System-driven reactions, not manual interventions',
-        ml: 'ml-[29px]',
+        ml: 'md:ml-[29px]',
         icon: <path d="M19 13V10H18V9H17V6H16V4H15V3H14V2H13V1H11V2H12V4H11V6H10V7H9V8H8V9H7V10H6V13H7V15H6V14H5V12H4V14H3V17H4V19H5V20H6V21H7V22H8V23H16V22H17V21H18V20H19V18H20V13H19ZM17 20H16V21H14V22H10V21H9V17H10V16H11V15H12V14H13V11H12V10H11V9H12V10H14V12H15V17H14V19H15V18H16V17H17V20Z" fill="white"/>,
     },
     {
         text: 'Every action is visible and traceable in the dashboard',
-        ml: 'ml-[57px]',
+        ml: 'md:ml-[57px]',
         icon: (
             <>
                 <path d="M16 11V13H15V14H14V15H13V16H11V15H10V14H9V13H8V11H10V10H11V8H13V9H14V10H15V11H16Z" fill="white"/>
@@ -24,7 +24,7 @@ const CARDS = [
 ];
 
 const ProtectionSection = () => (
-    <SectionLayout id="protection" isLeft isIcon={false} className="max-w-[1320px] mt-[120px]" title="Built for Real-Time Protection" subtitle="Continuous monitoring. Immediate response.">
+    <SectionLayout id="protection" isLeft isIcon={false} className="max-w-[1320px] mt-[60px] md:mt-[120px]" title="Built for Real-Time Protection" subtitle="Continuous monitoring. Immediate response.">
         <div className="flex w-full">
             <img src="/assets/img/protection--bg.svg" className="absolute top-0 right-0" alt="" />
 
@@ -45,7 +45,7 @@ const ProtectionSection = () => (
                                     {card.icon}
                                 </svg>
                             </div>
-                            <span className="text-white font-medium text-[22px] leading-[140%] max-w-[335px]">{card.text}</span>
+                            <span className="text-white font-medium text-lg md:text-[22px] leading-[140%] max-w-[335px]">{card.text}</span>
                         </div>
                     </div>
                 ))}

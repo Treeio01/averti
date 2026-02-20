@@ -10,8 +10,8 @@ const faqData = [
 ];
 
 const FaqSection = () => (
-    <SectionLayout id="faq" className="mt-[120px] max-w-[874px] relative" title="FAQ" subtitle="Clear answers to common questions">
-        <img src="/assets/img/faq--bg.png" className="absolute top-0 left-1/2 -translate-x-1/2 min-w-[1920px] max-w-[1920px]" alt="" />
+    <SectionLayout id="faq" className="mt-[60px] md:mt-[120px] max-w-[874px] relative overflow-hidden" title="FAQ" subtitle="Clear answers to common questions">
+        <img src="/assets/img/faq--bg.png" className="absolute top-0 left-1/2 -translate-x-1/2 w-[1920px] pointer-events-none" alt="" />
         <div className="flex flex-col z-50 gap-[20px] items-center w-full">
             {faqData.map((item, index) => (
                 <div

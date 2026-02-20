@@ -12,15 +12,15 @@ export default function Dashboard() {
             <Head title="Dashboard" />
             <TopText text={props.settings?.text ?? '$Averti token launch coming soon. Contract address will appear here.'} />
 
-            <div className="flex w-full gap-[20px] p-[20px] flex-col">
+            <div className="flex w-full gap-[12px] md:gap-[20px] p-[12px] md:p-[20px] flex-col">
                 <Header wallet={props.wallet} />
 
                 <div className="flex w-full gap-[20px] md:flex-row flex-col">
                     
-                    <DashboardBlockLayout className="w-full max-w-[613px] relative min-h-[390px] items-end justify-center overflow-hidden">
-                        <img src="/assets/img/wallet-img--img-1.svg" className="absolute left-1/2 top-1/2 -translate-1/2 object-cover min-w-[613px] h-full" alt="" />
+                    <DashboardBlockLayout className="w-full md:max-w-[613px] relative min-h-[280px] md:min-h-[390px] items-end justify-center overflow-hidden">
+                        <img src="/assets/img/wallet-img--img-1.svg" className="absolute left-1/2 top-1/2 -translate-1/2 object-cover min-w-full md:min-w-[613px] h-full" alt="" />
                         <div className="flex flex-col gap-[20px] items-center z-50">
-                            <span className="text-[#EEEEEE] text-[32px] font-medium">Internal Solana Wallet</span>
+                            <span className="text-[#EEEEEE] text-[22px] md:text-[32px] font-medium text-center">Internal Solana Wallet</span>
                             <span className="text-[#EEEEEE]/60 text-lg">Used for automation and execution</span>
                         </div>
                     </DashboardBlockLayout>
@@ -118,10 +118,10 @@ export default function Dashboard() {
                 </div>
 
               
-                <DashboardBlockLayout className="w-full p-[90px] flex-col gap-[52px] items-center relative">
+                <DashboardBlockLayout className="w-full p-[24px] md:p-[90px] flex-col gap-[30px] md:gap-[52px] items-center relative">
                     <img src="/assets/img/wallet--main-bg.svg" className="absolute left-1/2 top-1/2 -translate-1/2 h-full" alt="" />
                     <div className="flex flex-col gap-[20px] items-center">
-                        <span className="text-white text-[36px] font-medium">AVRT Benefits (Locked)</span>
+                        <span className="text-white text-[24px] md:text-[36px] font-medium text-center">AVRT Benefits (Locked)</span>
                         <span className="text-[#EEEEEE]/60 text-xl">Reduced fees with AVRT</span>
                     </div>
                     <div className="flex flex-col gap-[44px] items-center">

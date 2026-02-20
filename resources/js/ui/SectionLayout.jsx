@@ -1,10 +1,10 @@
 const SectionLayout = ({ children, title, subtitle, className, isLeft, isIcon = true, id }) => (
-    <section id={id} className={"flex w-full relative gap-[40px] flex-col mt-[33px] items-center " + className}>
+    <section id={id} className={"flex w-full relative gap-[24px] md:gap-[40px] flex-col mt-[33px] items-center px-4 md:px-0 " + className}>
         {isLeft ? (
             <div className="justify-between z-50 flex items-end w-full">
                 <div className="flex flex-col gap-[25px]">
                     <h2
-                        className="text-white font-medium text-[40px] leading-[110%] tracking-[-0.00em]"
+                        className="text-white font-medium text-[26px] md:text-[40px] leading-[110%] tracking-[-0.00em]"
                         data-scroll-animate="slide-in-left-blur"
                         data-scroll-duration="0.9"
                     >
@@ -33,7 +33,7 @@ const SectionLayout = ({ children, title, subtitle, className, isLeft, isIcon = 
         ) : (
             <div className="flex flex-col z-50 gap-[25px] items-center">
                 <h2
-                    className="text-white font-medium text-[40px] leading-[110%] tracking-[-0.00em]"
+                    className="text-white font-medium text-[26px] md:text-[40px] leading-[110%] tracking-[-0.00em]"
                     data-scroll-animate="blur-fade"
                     data-scroll-duration="0.9"
                 >

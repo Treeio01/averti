@@ -9,18 +9,19 @@ const CARDS = [
 ];
 
 const HowItWorksSection = () => (
-    <SectionLayout id="how-it-works" className="mt-[200px] max-w-[1320px]" isLeft title="How It Works" subtitle="From deposit to protection — step by step">
+    <SectionLayout id="how-it-works" className="mt-[60px] md:mt-[200px] max-w-[1320px]" isLeft title="How It Works" subtitle="From deposit to protection — step by step">
         <div className="flex w-full gap-[20px] flex-wrap">
             {CARDS.map((card, i) => (
                 <div
                     key={card.text}
-                    className={`flex w-full max-w-[${card.maxW}] min-h-[330px] overflow-hidden bg-[#070707] border border-[#1A1A1A] rounded-[25px] p-[40px] items-end relative`}
+                    style={{ maxWidth: card.maxW }}
+                    className="flex w-full min-h-[250px] md:min-h-[330px] overflow-hidden bg-[#070707] border border-[#1A1A1A] rounded-[25px] p-[24px] md:p-[40px] items-end relative"
                     data-scroll-animate={i % 2 === 0 ? 'tilt-in' : 'float-up'}
                     data-scroll-delay={i * 120}
                     data-scroll-duration="0.9"
                 >
                     <img src={`/assets/img/${card.img}`} className="absolute left-1/2 top-1/2 -translate-1/2" alt="" />
-                    <span className={`text-white z-50 font-medium text-[22px] leading-[140%] tracking-[-0.00em] ${card.textMaxW ? `max-w-[${card.textMaxW}]` : 'max-w-[359px]'}`}>
+                    <span style={{ maxWidth: card.textMaxW || '359px' }} className="text-white z-50 font-medium text-lg md:text-[22px] leading-[140%] tracking-[-0.00em]">
                         {card.text}
                     </span>
                 </div>

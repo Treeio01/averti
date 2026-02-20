@@ -2,7 +2,7 @@ import DashboardBlockLayout from '@/ui/DashboardBlockLayout.jsx';
 import DashboardRow from '@/ui/DashboardRow.jsx';
 
 const EngineStatusBlock = ({ currentTime }) => (
-    <DashboardBlockLayout className="w-full max-w-[455px] gap-[32px] flex-col">
+    <DashboardBlockLayout className="w-full md:max-w-[455px] gap-[32px] flex-col">
         <div className="flex flex-col gap-6 w-full">
             <DashboardRow label="Engine:">
                 <span className="font-medium text-lg text-[#EEEEEE]">ACTIVE</span>

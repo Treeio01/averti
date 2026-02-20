@@ -1,8 +1,8 @@
 import LaunchAppButton from '@/components/landing/LaunchAppButton.jsx';
 
 const MainSection = () => (
-    <section id="hero" className="flex z-50 w-full flex-col items-center mt-20 justify-between">
-        <div className="flex flex-col z-50 items-center gap-[30px]">
+    <section id="hero" className="flex z-50 w-full flex-col items-center mt-10 md:mt-20 justify-between px-4 md:px-0">
+        <div className="flex flex-col z-50 items-center gap-[20px] md:gap-[30px]">
             <div
                 className="flex py-3 px-5 relative rounded-[16px] overflow-hidden"
                 data-scroll-animate="blur-scale"
@@ -15,7 +15,7 @@ const MainSection = () => (
             <div className="flex flex-col gap-[60px] items-center max-w-[603px]">
                 <div className="flex flex-col items-center gap-[25px]">
                     <h1
-                        className="text-white text-center font-medium text-[60px] leading-[110%] tracking-[-0.00em]"
+                        className="text-white text-center font-medium text-[32px] md:text-[48px] lg:text-[60px] leading-[110%] tracking-[-0.00em]"
                         data-scroll-animate="blur-fade"
                         data-scroll-delay="500"
                         data-scroll-duration="1.1"

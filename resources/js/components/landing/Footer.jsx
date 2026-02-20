@@ -12,16 +12,16 @@ const navLinks = [
 ];
 
 const Footer = ({ twitter, isLight = true }) => (
-    <footer className="flex flex-col items-center mt-[120px] relative w-full max-w-[1321px] gap-[200px]">
+    <footer className="flex flex-col items-center mt-[60px] md:mt-[120px] relative w-full max-w-[1321px] gap-[60px] md:gap-[200px] px-4 md:px-0">
         {isLight && <img src="/assets/img/glow-header.svg" className="absolute top-full left-1/2 -translate-x-1/2" alt="" />}
 
-        <div className="flex w-full items-center justify-between z-50">
+        <div className="flex w-full items-center justify-between z-50 flex-wrap gap-4">
             <div className="flex items-center gap-[10px]" data-scroll-animate="slide-in-left" data-scroll-duration="0.7">
                 <img src="/assets/img/logo.svg" alt="" />
                 <span className="text-white font-semibold text-lg">Averti</span>
             </div>
 
-            <nav className="flex items-center gap-[24px]">
+            <nav className="hidden lg:flex items-center gap-[24px]">
                 {navLinks.map((item, i) => (
                     <a
                         key={item.href}

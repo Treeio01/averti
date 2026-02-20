@@ -84,8 +84,8 @@ const HedgeTimelineBlock = () => {
                 </svg>
             </div>
 
-            <div className="flex w-full flex-col gap-[15px]">
-                <div className="flex w-full items-center gap-[10px]">
+            <div className="flex w-full flex-col gap-[15px] overflow-x-auto">
+                <div className="flex w-full items-center gap-[10px] min-w-[900px]">
                     {COLUMNS.map(col => (
                         <span key={col.label} className={`text-[#EEEEEE]/60 text-lg w-full ${col.width}`}>
                             {col.label}
@@ -93,7 +93,7 @@ const HedgeTimelineBlock = () => {
                     ))}
                 </div>
 
-                <div ref={scrollRef} className="flex flex-col w-full gap-[15px] max-h-[360px] overflow-y-scroll">
+                <div ref={scrollRef} className="flex flex-col w-full gap-[15px] max-h-[360px] overflow-y-scroll min-w-[900px]">
                     {entries.map((entry, i) => (
                         <div
                             key={entry.id}

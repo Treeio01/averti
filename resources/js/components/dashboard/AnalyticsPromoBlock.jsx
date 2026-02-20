@@ -8,7 +8,7 @@ const FEATURES = [
 ];
 
 const AnalyticsPromoBlock = () => (
-    <DashboardBlockLayout className="w-full max-w-[526px] py-[107px]! px-[93px]! gap-[32px] flex-col relative overflow-hidden">
+    <DashboardBlockLayout className="w-full md:max-w-[526px] py-[40px] md:py-[107px]! px-[20px] md:px-[93px]! gap-[32px] flex-col relative overflow-hidden">
         <img
             src="/assets/img/dashboard-img--blur.png"
             className="absolute top-1/2 left-1/2 -translate-1/2 object-cover h-full"
@@ -22,7 +22,7 @@ const AnalyticsPromoBlock = () => (
                         <path d="M22 12V22H21V23H3V22H2V12H3V11H6V5H7V3H8V2H10V1H14V2H16V3H17V5H18V11H15V5H14V4H10V5H9V11H21V12H22Z" fill="white"/>
                     </svg>
                 </div>
-                <span className="text-[#EEEEEE] text-center font-medium text-[32px] w-full">
+                <span className="text-[#EEEEEE] text-center font-medium text-[22px] md:text-[32px] w-full">
                     Extended analytics <br/> for <span className="text-[#58E8BB] font-semibold">AVRT</span> holders
                 </span>
             </div>

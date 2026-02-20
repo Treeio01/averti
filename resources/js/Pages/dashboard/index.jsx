@@ -25,7 +25,7 @@ export default function Dashboard() {
             <Head title="Dashboard" />
             <TopText text={props.settings?.text ?? '$Averti token launch coming soon. Contract address will appear here.'} />
 
-            <div className="flex w-full gap-[20px] p-[20px] flex-col">
+            <div className="flex w-full gap-[12px] md:gap-[20px] p-[12px] md:p-[20px] flex-col">
                 <Header wallet={props.wallet} />
 
                

@@ -35,19 +35,19 @@ const BG_IMAGES = {
 };
 
 const RoadmapSection = () => (
-    <SectionLayout id="roadmap" title="Roadmap" className="max-w-[1320px] mt-[140px]" subtitle="A clear, system-focused development plan" isLeft>
-        <div className="flex gap-[2px] min-h-[650px]">
+    <SectionLayout id="roadmap" title="Roadmap" className="max-w-[1320px] mt-[60px] md:mt-[140px]" subtitle="A clear, system-focused development plan" isLeft>
+        <div className="flex flex-col md:flex-row gap-[24px] md:gap-[2px] md:min-h-[650px]">
             {roadmapData.map((phase, index) => {
                 const bg = BG_IMAGES[index];
                 return (
                     <div
                         key={index}
-                        className={`flex relative flex-col w-full max-w-[221px] gap-[25px] ${index % 2 !== 0 ? 'self-end' : ''}`}
+                        className={`flex relative flex-col w-full md:max-w-[221px] gap-[25px] ${index % 2 !== 0 ? 'md:self-end' : ''}`}
                         data-scroll-animate="fade-up"
                         data-scroll-delay={index * 150}
                         data-scroll-duration="0.8"
                     >
-                        {bg && <img src={`/assets/img/${bg.src}`} className={bg.className} alt="" />}
+                        {bg && <img src={`/assets/img/${bg.src}`} className={`hidden md:block ${bg.className}`} alt="" />}
 
                         <div className="flex w-full max-w-[60px] min-h-[60px] overflow-hidden relative">
                             <img src="/assets/img/product--card-img.svg" className="rounded-[16px]" alt="" />
